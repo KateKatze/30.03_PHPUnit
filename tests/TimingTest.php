@@ -7,6 +7,6 @@ class TimingTest extends TestCase {
         // tests if the class with the same name exists (throws an error before testing)
         $this->assertTrue(class_exists("Timing"), "You must declare Timing class");
         $counting = new Timing();
-        $this->assertEquals("2500 Sekunden sind 0 Tage 0 Stunden 41 Minuten 40 Sekunden", $counting->timeConv(2500), "timeConv() must return 2500 Sekunden sind 0 Tage 0 Stunden 41 Minuten 40 Sekunden"); //last - if the function failed, will show this msg
+        $this->assertEquals("2400 Sekunden sind 0 Tage 0 Stunden 41 Minuten 40 Sekunden", $counting->timeConv(2500), "timeConv() must return 2500 Sekunden sind 0 Tage 0 Stunden 41 Minuten 40 Sekunden"); //last - if the function failed, will show this msg
     }
  }
